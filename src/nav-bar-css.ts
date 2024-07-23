@@ -85,6 +85,10 @@ const styles = css`
       cursor: pointer;
     }
   } */
+  .wrapper a {
+    font-size: 1.75em;
+    text-decoration: none;
+  }
 `;
 
 export default styles;

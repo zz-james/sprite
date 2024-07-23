@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="https://use.typekit.net/sqs0xgn.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/barba.css" />
+    <link rel="stylesheet" href="/css/elements.css" /> -->
+    <link rel="stylesheet" href=" css/styles.css" />
+    <!-- <link rel="stylesheet" href="/css/medium.css" />
+    <link rel="stylesheet" href="/css/large.css" /> -->
+
+    <link rel="shortcut icon" href="/sprite_favicon.ico" />
+    <title>
+      Sprite Studios. | Experience Design Consultancy and Development
+    </title>
+
+    <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+    <script src="../node_modules/lit/polyfill-support.js"></script>
+    <script type="module" src="../nav-bar.js"></script>
+    <script type="module" src="../home-teaser.js"></script>
+    <script type="module" src="../who-we-are.js"></script>
+    <script type="module" src="../work-examples.js"></script>
+
+    <style>
+      header {
+        --magic-fraction: 0.073206vw;
+        box-sizing: border-box;
+      }
+
+      header {
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        padding: calc(20 * var(--magic-fraction))
+          calc(20 * var(--magic-fraction)) 0 calc(20 * var(--magic-fraction));
+      }
+      @media screen and (min-width: 980px) {
+        header {
+          --magic-fraction: 0.073206vw;
+        }
+        header {
+          padding: calc(40 * var(--magic-fraction))
+            calc(40 * var(--magic-fraction)) 0 calc(40 * var(--magic-fraction));
+        }
+      }
+
+      header .logo {
+        display: block;
+      }
+
+      header .wrapper {
+        /* -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox; */
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        /* -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end; */
+        font-size: calc(13 * var(--magic-fraction));
+        font-family: neue-haas-grotesk-display, sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        line-height: calc(15 * var(--magic-fraction));
+      }
+    </style>
+  </head>
+
+  <body data-barba="wrapper">
+    <header>
+      <div class="wrapper">
+        <a href="index.html">Home</a>
+
+        <a href="contact.html">CONTACT</a>
+      </div>
+    </header>
+    <main role="main" class="top">
+      <section
+        class="fv"
+        style="
+          font-size: 34px;
+          justify-content: center;
+          text-align: center;
+          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+            1px 1px 0 #000;
+        "
+      >
+        Please email us at:<br />spritestudiomorecambe@gmail.com
+      </section>
+    </main>
+  </body>
+</html>

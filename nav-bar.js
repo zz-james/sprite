@@ -20,7 +20,7 @@ let HomeTeaser = class HomeTeaser extends LitElement {
       <header>
         <div class="wrapper">
           <a
-            href="contact.html"
+            href="#"
             @click=${(e) => {
             e.preventDefault();
             this.switchSlide('home');
@@ -28,7 +28,7 @@ let HomeTeaser = class HomeTeaser extends LitElement {
             >Home</a
           >
           <a
-            href="contact.html"
+            href="#"
             @click=${(e) => {
             e.preventDefault();
             this.switchSlide('who');
@@ -36,7 +36,7 @@ let HomeTeaser = class HomeTeaser extends LitElement {
             >WHO</a
           >
           <a
-            href="contact.html"
+            href="#"
             @click=${(e) => {
             e.preventDefault();
             this.switchSlide('work');
@@ -44,14 +44,7 @@ let HomeTeaser = class HomeTeaser extends LitElement {
             >WORK</a
           >
 
-          <a
-            href="contact.html"
-            @click=${(e) => {
-            e.preventDefault();
-            this.switchSlide('contact');
-        }}
-            >CONTACT</a
-          >
+          <a href="contact.html">CONTACT</a>
         </div>
       </header>
     `;

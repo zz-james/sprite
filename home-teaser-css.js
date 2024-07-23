@@ -1,5 +1,5 @@
-import {css} from 'lit';
-const styles = css`
+import { css } from 'lit';
+const styles = css `
   /* --------------------------------------- */
 
   @keyframes blink {

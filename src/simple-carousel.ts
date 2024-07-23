@@ -87,10 +87,8 @@ export class SimpleCarousel extends LitElement {
 
   override render() {
     const containerStyles = {
-      height: `${this.containerHeight}px`,
+      height: `${this.containerHeight + 200}px`,
     };
-
-    console.log(containerStyles);
 
     return html`
       <slide-button @click=${this.navigateToPrevSlide}><</slide-button>

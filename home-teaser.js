@@ -11,13 +11,14 @@ let HomeTeaser = class HomeTeaser extends LitElement {
     render() {
         return html `
       <div class="container">
+        <!-- <img src="sprite_no_text.svg" width="100%" /> -->
         <div class="wrapper active">
           <div class="motion-text" id="home-mt">Hello</div>
         </div>
-        <div class="copy active">Something blah blah.</div>
+        <div class="copy active">We are Sprite Studios.</div>
 
         <div class="desc active">
-          sprite studios <br class="sp" />we create digital experiences.
+          <br class="sp" />we create digital experiences.
         </div>
 
         <div class="desc-ja">&nbsp;<br class="sp" /></div>

@@ -23,6 +23,7 @@ const styles = css `
     padding: 1em;
     overflow: hidden;
     position: relative;
+    background-color: rgba(255, 255, 255, 0.5);
   }
 `;
 export default styles;

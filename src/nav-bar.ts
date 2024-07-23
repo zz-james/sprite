@@ -22,7 +22,7 @@ export class HomeTeaser extends LitElement {
       <header>
         <div class="wrapper">
           <a
-            href="contact.html"
+            href="#"
             @click=${(e: MouseEvent) => {
               e.preventDefault();
               this.switchSlide('home');
@@ -30,7 +30,7 @@ export class HomeTeaser extends LitElement {
             >Home</a
           >
           <a
-            href="contact.html"
+            href="#"
             @click=${(e: MouseEvent) => {
               e.preventDefault();
               this.switchSlide('who');
@@ -38,7 +38,7 @@ export class HomeTeaser extends LitElement {
             >WHO</a
           >
           <a
-            href="contact.html"
+            href="#"
             @click=${(e: MouseEvent) => {
               e.preventDefault();
               this.switchSlide('work');
@@ -46,14 +46,7 @@ export class HomeTeaser extends LitElement {
             >WORK</a
           >
 
-          <a
-            href="contact.html"
-            @click=${(e: MouseEvent) => {
-              e.preventDefault();
-              this.switchSlide('contact');
-            }}
-            >CONTACT</a
-          >
+          <a href="contact.html">CONTACT</a>
         </div>
       </header>
     `;

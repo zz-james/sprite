@@ -57,9 +57,8 @@ let SimpleCarousel = class SimpleCarousel extends LitElement {
     }
     render() {
         const containerStyles = {
-            height: `${this.containerHeight}px`,
+            height: `${this.containerHeight + 200}px`,
         };
-        console.log(containerStyles);
         return html `
       <slide-button @click=${this.navigateToPrevSlide}><</slide-button>
       <div id="container" style="${styleMap(containerStyles)}">

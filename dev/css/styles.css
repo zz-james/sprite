@@ -14,10 +14,14 @@ body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
   position: relative;
+  background-color: #efeeea;
+  background-image: url('../images/sprite_no_text.svg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: 10em -190px;
 }
 
 main {
-  background-color: #efeeea;
   position: relative;
 }
 
@@ -36,4 +40,9 @@ main.top section.fv {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+}
+
+.wrapper a {
+  font-size: 1.75em;
+  text-decoration: none;
 }
