@@ -1,22 +1,117 @@
-<!doctype html>
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>&lt;my-element> Demo</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="https://use.typekit.net/sqs0xgn.css" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <!-- <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/barba.css" />
+    <link rel="stylesheet" href="/css/elements.css" /> -->
+    <link rel="stylesheet" href=" css/styles.css" />
+    <!-- <link rel="stylesheet" href="/css/medium.css" />
+    <link rel="stylesheet" href="/css/large.css" /> -->
+
+    <link rel="shortcut icon" href="/sprite_favicon.ico" />
+    <title>
+      Sprite Studios. | Experience Design Consultancy and Development
+    </title>
+
     <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
     <script src="../node_modules/lit/polyfill-support.js"></script>
-    <script type="module" src="../my-element.js"></script>
+    <script type="module" src="../nav-bar.js"></script>
+    <script type="module" src="../home-teaser.js"></script>
+    <script type="module" src="../who-we-are.js"></script>
+    <script type="module" src="../work-examples.js"></script>
     <style>
-      p {
-        border: solid 1px blue;
-        padding: 8px;
+      .hidden {
+        visibility: hidden;
+        height: 0;
+        animation: 1s fadeOut;
+        animation-fill-mode: forwards;
+      }
+      .show {
+        visibility: visible;
+        height: 100vh;
+        height: -webkit-fill-available;
+        overflow: clip;
+        animation: 1s fadeIn;
+        animation-fill-mode: forwards;
+        position: relative;
+      }
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOut {
+        0% {
+          visibility: visible;
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
       }
     </style>
   </head>
-  <body>
-    <my-element>
-      <p>This is child content</p>
-    </my-element>
+
+  <body data-barba="wrapper">
+    <nav-bar></nav-bar>
+    <main role="main" class="top">
+      <section class="fv">
+        <div id="who" class="hidden">
+          <who-we-are></who-we-are>
+        </div>
+
+        <div id="work-examples" class="hidden">
+          <work-examples></work-examples>
+        </div>
+
+        <div id="teaser">
+          <home-teaser></home-teaser>
+        </div>
+      </section>
+    </main>
+    <script>
+      const whoSection = document.getElementById('who');
+      const workSection = document.getElementById('work-examples');
+      const teaserSection = document.getElementById('teaser');
+
+      window.switchSection = function (section) {
+        switch (section) {
+          case 'who':
+            whoSection.classList.remove('hidden');
+            workSection.classList.remove('show');
+            workSection.classList.add('hidden');
+            whoSection.classList.add('show');
+            teaserSection.classList.remove('show');
+            teaserSection.classList.add('hidden');
+            break;
+          case 'work':
+            workSection.classList.remove('hidden');
+            whoSection.classList.remove('show');
+            whoSection.classList.add('hidden');
+            workSection.classList.add('show');
+            teaserSection.classList.remove('show');
+            teaserSection.classList.add('hidden');
+            break;
+          case 'home':
+            workSection.classList.add('hidden');
+            workSection.classList.remove('show');
+            whoSection.classList.remove('show');
+            whoSection.classList.add('hidden');
+            teaserSection.classList.add('show');
+        }
+      };
+    </script>
   </body>
 </html>

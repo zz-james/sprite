@@ -1,0 +1,39 @@
+html {
+  font-size: 62.5%;
+  background-color: #efeeea;
+  color: #1f1f1d;
+  min-height: -webkit-fill-available;
+}
+
+body {
+  font-family: 'neue-haas-grotesk-display', 'Gothic Medium BBB', sans-serif;
+  font-weight: 300;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  position: relative;
+  min-height: 100vh;
+  min-height: -webkit-fill-available;
+  position: relative;
+}
+
+main {
+  background-color: #efeeea;
+  position: relative;
+}
+
+main section.fv {
+  height: 100vh;
+}
+
+main.top section.fv {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: clip;
+}
+
+#teaser {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
