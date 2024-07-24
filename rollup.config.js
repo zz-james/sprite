@@ -1,42 +1,61 @@
-/**
- * @license
- * Copyright 2018 Google LLC
- * SPDX-License-Identifier: BSD-3-Clause
- */
+// Import rollup plugins
+
+import {rollupPluginHTML as html} from '@web/rollup-plugin-html';
+
+import {copy} from '@web/rollup-plugin-copy';
+
+import resolve from '@rollup/plugin-node-resolve';
+
+import terser from '@rollup/plugin-terser';
+
+// import minifyHTML from 'rollup-plugin-minify-html-literals';
+import pkgMinifyHTML from 'rollup-plugin-minify-html-literals';
+const minifyHTML = pkgMinifyHTML.default;
 
 import summary from 'rollup-plugin-summary';
-import terser from '@rollup/plugin-terser';
-import resolve from '@rollup/plugin-node-resolve';
-import replace from '@rollup/plugin-replace';
 
 export default {
-  input: 'dist/my-element.js',
-  output: {
-    file: 'file/my-element.bundled.js',
-    format: 'esm',
-  },
-  onwarn(warning) {
-    if (warning.code !== 'THIS_IS_UNDEFINED') {
-      console.error(`(!) ${warning.message}`);
-    }
-  },
   plugins: [
-    replace({preventAssignment: false, 'Reflect.decorate': 'undefined'}),
+    // Entry point for application build; can specify a glob to build multiple
+
+    // HTML files for non-SPA app
+
+    html({
+      input: './dev/index.html',
+    }),
+
+    // Resolve bare module specifiers to relative paths
+
     resolve(),
-    /**
-     * This minification setup serves the static site generation.
-     * For bundling and minification, check the README.md file.
-     */
+
+    // Minify HTML template literals
+
+    minifyHTML(),
+
+    // Minify JS
+
     terser({
       ecma: 2021,
+
       module: true,
+
       warnings: true,
-      mangle: {
-        properties: {
-          regex: /^__/,
-        },
-      },
     }),
+
+    // Print bundle summary
+
     summary(),
+
+    // Optional: copy any static assets to build directory
+
+    copy({
+      patterns: ['images/**/*', 'css/**/*'],
+    }),
   ],
+
+  output: {
+    dir: 'build',
+  },
+
+  preserveEntrySignatures: 'strict',
 };
