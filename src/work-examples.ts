@@ -174,7 +174,11 @@ export class WorkExamples extends LitElement {
                   <img src="images/elastic1.png" />
                 </div>
                 <div class="example-card-body">
-                  The Elastic Project for the British Library
+                  The Elastic Project for the British Library: A scrollable
+                  zoomable map of a valuable library collection, with a secret!
+                  <br /><a href="http://www.elasticsystem.net/" target="_pop"
+                    >read more..</a
+                  >
                 </div>
               </div>
 
@@ -184,7 +188,11 @@ export class WorkExamples extends LitElement {
                   <img src="images/elastic2.png" />
                 </div>
                 <div class="example-card-body">
-                  The Elastic Project for the British Library
+                  The Elastic Project for the British Library: A scrollable
+                  zoomable map of a valuable library collection, with a secret!
+                  <br /><a href="http://www.elasticsystem.net/" target="_pop"
+                    >read more..</a
+                  >
                 </div>
               </div>
 
@@ -194,7 +202,11 @@ export class WorkExamples extends LitElement {
                   <img src="images/elastic3.png" />
                 </div>
                 <div class="example-card-body">
-                  The Elastic Project for the British Library
+                  The Elastic Project for the British Library: A scrollable
+                  zoomable map of a valuable library collection, with a secret!
+                  <br /><a href="http://www.elasticsystem.net/" target="_pop"
+                    >read more..</a
+                  >
                 </div>
               </div>
 
@@ -249,7 +261,12 @@ export class WorkExamples extends LitElement {
                   <img src="images/edible1.jpg" />
                 </div>
                 <div class="example-card-body">
-                  Edible Urban Project with Mikey Tomkins
+                  Edible Urban Project with Mikey Tomkins: An interactive map of
+                  possible areas for food growing in UK cities
+                  <br /><a
+                    href="https://mikeytomkins.co.uk/category/edible-maps/"
+                    >read more...</a
+                  >
                 </div>
               </div>
 
@@ -259,7 +276,12 @@ export class WorkExamples extends LitElement {
                   <img src="images/edible2.jpg" />
                 </div>
                 <div class="example-card-body">
-                  Edible Urban Project with Mikey Tomkins
+                  Edible Urban Project with Mikey Tomkins: An interactive map of
+                  possible areas for food growing in UK cities
+                  <br /><a
+                    href="https://mikeytomkins.co.uk/category/edible-maps/"
+                    >read more...</a
+                  >
                 </div>
               </div>
 
@@ -269,7 +291,12 @@ export class WorkExamples extends LitElement {
                   <img src="images/edible3.jpg" />
                 </div>
                 <div class="example-card-body">
-                  Edible Urban Project with Mikey Tomkins
+                  Edible Urban Project with Mikey Tomkins: An interactive map of
+                  possible areas for food growing in UK cities
+                  <br /><a
+                    href="https://mikeytomkins.co.uk/category/edible-maps/"
+                    >read more...</a
+                  >
                 </div>
               </div>
             </simple-carousel>
