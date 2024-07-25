@@ -19,6 +19,7 @@ jobs:
       - name: Build Project
         run: |
           npm install --force
+          npm run build
           npm run build:deploy
 
       - name: 📂 Sync files
