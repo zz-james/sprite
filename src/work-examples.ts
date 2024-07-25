@@ -264,6 +264,7 @@ export class WorkExamples extends LitElement {
                   Edible Urban Project with Mikey Tomkins: An interactive map of
                   possible areas for food growing in UK cities
                   <br /><a
+                    target="_pop"
                     href="https://mikeytomkins.co.uk/category/edible-maps/"
                     >read more...</a
                   >
@@ -279,6 +280,7 @@ export class WorkExamples extends LitElement {
                   Edible Urban Project with Mikey Tomkins: An interactive map of
                   possible areas for food growing in UK cities
                   <br /><a
+                    target="_pop"
                     href="https://mikeytomkins.co.uk/category/edible-maps/"
                     >read more...</a
                   >
@@ -294,6 +296,7 @@ export class WorkExamples extends LitElement {
                   Edible Urban Project with Mikey Tomkins: An interactive map of
                   possible areas for food growing in UK cities
                   <br /><a
+                    target="_pop"
                     href="https://mikeytomkins.co.uk/category/edible-maps/"
                     >read more...</a
                   >
