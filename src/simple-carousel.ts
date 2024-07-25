@@ -90,6 +90,8 @@ export class SimpleCarousel extends LitElement {
       height: `40vh`,
     };
 
+    console.log(this.containerHeight);
+
     return html`
       <slide-button @click=${this.navigateToPrevSlide}><</slide-button>
       <div id="container" style="${styleMap(containerStyles)}">
