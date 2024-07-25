@@ -11,11 +11,10 @@ const styles = css`
 
   .work-examples h2 {
     margin-top: 2em;
-    text-align: center;
   }
 
   .example-card-body {
-    margin-top: 0em;
+    margin-top: 0.2em;
   }
 
   .example-card-image {

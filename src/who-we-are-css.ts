@@ -19,6 +19,7 @@ const styles = css`
     display: flex;
     justify-content: space-between;
     margin: 0;
+    margin-left: 0.2em;
     background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     padding-right: 1em;
@@ -26,7 +27,7 @@ const styles = css`
 
   .accordion-panel {
     background-color: white;
-    height: 35vh;
+    height: 30vh;
     overflow-y: auto;
     transition: height 0.5s ease-in;
   }

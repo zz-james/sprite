@@ -60,6 +60,28 @@ export class WorkExamples extends LitElement {
               <!-- -->
               <div class="example-card">
                 <div class="example-card-image">
+                  <img src="images/ruskin2.png" />
+                </div>
+                <div class="example-card-body">
+                  Ruskin Gallery exhibition space created for Lancaster
+                  University Innovation Hub.
+                </div>
+              </div>
+
+              <!-- -->
+              <div class="example-card">
+                <div class="example-card-image">
+                  <img src="images/ruskin3.png" />
+                </div>
+                <div class="example-card-body">
+                  Ruskin Gallery exhibition space created for Lancaster
+                  University Innovation Hub.
+                </div>
+              </div>
+
+              <!-- -->
+              <div class="example-card">
+                <div class="example-card-image">
                   <img src="images/agora2.png" />
                 </div>
                 <div class="example-card-body">
@@ -88,27 +110,6 @@ export class WorkExamples extends LitElement {
                   I help cover the sweeper cleaning the feathers after Icarus
                   flew to close to the sun, augmented reality created for the
                   Morecambe Agora Project
-                </div>
-              </div>
-
-              <!-- -->
-              <div class="example-card">
-                <div class="example-card-image">
-                  <img src="images/ruskin2.png" />
-                </div>
-                <div class="example-card-body">
-                  Ruskin Gallery exhibition space created for Lancaster
-                  University Innovation Hub.
-                </div>
-              </div>
-              <!-- -->
-              <div class="example-card">
-                <div class="example-card-image">
-                  <img src="images/ruskin3.png" />
-                </div>
-                <div class="example-card-body">
-                  Ruskin Gallery exhibition space created for Lancaster
-                  University Innovation Hub.
                 </div>
               </div>
 
