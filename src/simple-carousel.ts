@@ -87,7 +87,7 @@ export class SimpleCarousel extends LitElement {
 
   override render() {
     const containerStyles = {
-      height: `${this.containerHeight + 200}px`,
+      height: `40vh`,
     };
 
     return html`
