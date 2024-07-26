@@ -97,10 +97,10 @@ export class WhoWeAre extends LitElement {
             </p>
 
             <p>
-              He hascreated websites, games, interactive kiosks, digital maps of
-              both real and imagined places, responsive installations, augmented
-              reality walks, digital pop-up books, and archives with rich media
-              interfaces.
+              He has created websites, games, interactive kiosks, digital maps
+              of both real and imagined places, responsive installations,
+              augmented reality walks, digital pop-up books, and archives with
+              rich media interfaces.
             </p>
             <p>
               Name any programming language or software and there's a fairly
