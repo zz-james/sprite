@@ -48,9 +48,9 @@ export default {
 
     // Optional: copy any static assets to build directory
 
-    copy({
-      patterns: ['images/**/*', 'css/**/*'],
-    }),
+    copy({patterns: 'images/*', rootDir: './dev'}),
+    copy({patterns: 'css/*', rootDir: './dev'}),
+    copy({patterns: 'contact.html', rootDir: './dev'}),
   ],
 
   output: {

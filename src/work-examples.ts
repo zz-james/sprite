@@ -13,7 +13,7 @@ export class WorkExamples extends LitElement {
     return html`
       <div class="work-examples">
         <div>
-          <h2>Some examples of our work:</h2>
+          <h5>&nbsp;</h5>
           <div class="work-example">
             <simple-carousel>
               <!-- -->
@@ -60,6 +60,28 @@ export class WorkExamples extends LitElement {
               <!-- -->
               <div class="example-card">
                 <div class="example-card-image">
+                  <img src="images/ruskin2.png" />
+                </div>
+                <div class="example-card-body">
+                  Ruskin Gallery exhibition space created for Lancaster
+                  University Innovation Hub.
+                </div>
+              </div>
+
+              <!-- -->
+              <div class="example-card">
+                <div class="example-card-image">
+                  <img src="images/ruskin3.png" />
+                </div>
+                <div class="example-card-body">
+                  Ruskin Gallery exhibition space created for Lancaster
+                  University Innovation Hub.
+                </div>
+              </div>
+
+              <!-- -->
+              <div class="example-card">
+                <div class="example-card-image">
                   <img src="images/agora2.png" />
                 </div>
                 <div class="example-card-body">
@@ -88,27 +110,6 @@ export class WorkExamples extends LitElement {
                   I help cover the sweeper cleaning the feathers after Icarus
                   flew to close to the sun, augmented reality created for the
                   Morecambe Agora Project
-                </div>
-              </div>
-
-              <!-- -->
-              <div class="example-card">
-                <div class="example-card-image">
-                  <img src="images/ruskin2.png" />
-                </div>
-                <div class="example-card-body">
-                  Ruskin Gallery exhibition space created for Lancaster
-                  University Innovation Hub.
-                </div>
-              </div>
-              <!-- -->
-              <div class="example-card">
-                <div class="example-card-image">
-                  <img src="images/ruskin3.png" />
-                </div>
-                <div class="example-card-body">
-                  Ruskin Gallery exhibition space created for Lancaster
-                  University Innovation Hub.
                 </div>
               </div>
 
@@ -173,7 +174,11 @@ export class WorkExamples extends LitElement {
                   <img src="images/elastic1.png" />
                 </div>
                 <div class="example-card-body">
-                  The Elastic Project for the British Library
+                  The Elastic Project for the British Library: A scrollable
+                  zoomable map of a valuable library collection, with a secret!
+                  <br /><a href="http://www.elasticsystem.net/" target="_pop"
+                    >read more..</a
+                  >
                 </div>
               </div>
 
@@ -183,7 +188,11 @@ export class WorkExamples extends LitElement {
                   <img src="images/elastic2.png" />
                 </div>
                 <div class="example-card-body">
-                  The Elastic Project for the British Library
+                  The Elastic Project for the British Library: A scrollable
+                  zoomable map of a valuable library collection, with a secret!
+                  <br /><a href="http://www.elasticsystem.net/" target="_pop"
+                    >read more..</a
+                  >
                 </div>
               </div>
 
@@ -193,7 +202,11 @@ export class WorkExamples extends LitElement {
                   <img src="images/elastic3.png" />
                 </div>
                 <div class="example-card-body">
-                  The Elastic Project for the British Library
+                  The Elastic Project for the British Library: A scrollable
+                  zoomable map of a valuable library collection, with a secret!
+                  <br /><a href="http://www.elasticsystem.net/" target="_pop"
+                    >read more..</a
+                  >
                 </div>
               </div>
 
@@ -248,7 +261,13 @@ export class WorkExamples extends LitElement {
                   <img src="images/edible1.jpg" />
                 </div>
                 <div class="example-card-body">
-                  Edible Urban Project with Mikey Tomkins
+                  Edible Urban Project with Mikey Tomkins: An interactive map of
+                  possible areas for food growing in UK cities
+                  <br /><a
+                    target="_pop"
+                    href="https://mikeytomkins.co.uk/category/edible-maps/"
+                    >read more...</a
+                  >
                 </div>
               </div>
 
@@ -258,7 +277,13 @@ export class WorkExamples extends LitElement {
                   <img src="images/edible2.jpg" />
                 </div>
                 <div class="example-card-body">
-                  Edible Urban Project with Mikey Tomkins
+                  Edible Urban Project with Mikey Tomkins: An interactive map of
+                  possible areas for food growing in UK cities
+                  <br /><a
+                    target="_pop"
+                    href="https://mikeytomkins.co.uk/category/edible-maps/"
+                    >read more...</a
+                  >
                 </div>
               </div>
 
@@ -268,7 +293,13 @@ export class WorkExamples extends LitElement {
                   <img src="images/edible3.jpg" />
                 </div>
                 <div class="example-card-body">
-                  Edible Urban Project with Mikey Tomkins
+                  Edible Urban Project with Mikey Tomkins: An interactive map of
+                  possible areas for food growing in UK cities
+                  <br /><a
+                    target="_pop"
+                    href="https://mikeytomkins.co.uk/category/edible-maps/"
+                    >read more...</a
+                  >
                 </div>
               </div>
             </simple-carousel>

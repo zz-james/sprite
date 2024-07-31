@@ -97,10 +97,10 @@ export class WhoWeAre extends LitElement {
             </p>
 
             <p>
-              He created websites, games, interactive kiosks, digital maps of
-              both real and imagined places, responsive installations, augmented
-              reality walks, digital pop-up books, and archives with rich media
-              interfaces.
+              He has created websites, games, interactive kiosks, digital maps
+              of both real and imagined places, responsive installations,
+              augmented reality walks, digital pop-up books, and archives with
+              rich media interfaces.
             </p>
             <p>
               Name any programming language or software and there's a fairly
@@ -113,7 +113,7 @@ export class WhoWeAre extends LitElement {
               young people. He has an MSc. in Computer Science in which he
               developed a tool to enable non-specialist educators to add
               interactive animations and simulations to online learning
-              platforms such as blackboard and moodle.
+              platforms such as Blackboard and Moodle.
             </p>
             <p>
               He was a software engineer for a Raspberry Pi education project
@@ -126,7 +126,7 @@ export class WhoWeAre extends LitElement {
               He also has excellent communication skills having delivered over
               50 lectures to MA students at Ravensbourne College of Art and
               Technology and over 100 workshops to a variety of participants
-              from primary school age to pensioners. I also presented a series
+              from primary school age to pensioners. He also presented a series
               of talks on network media for the Take Away Festival at the Dana
               Centre, Science Museum.
             </p>

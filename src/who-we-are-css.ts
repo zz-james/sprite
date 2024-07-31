@@ -2,11 +2,12 @@ import {css} from 'lit';
 
 const styles = css`
   .accordion {
-    font-size: calc(96 * var(--magic-fraction));
+    --magic-fraction: 0.073206vw;
     padding: 0.5em;
     padding-top: 0.8em;
     height: 100%;
     overflow: clip;
+    font-size: calc(35 * var(--magic-fraction));
   }
 
   .accordion-item {
@@ -19,6 +20,7 @@ const styles = css`
     display: flex;
     justify-content: space-between;
     margin: 0;
+    margin-left: 0.2em;
     background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
     padding-right: 1em;
@@ -26,9 +28,10 @@ const styles = css`
 
   .accordion-panel {
     background-color: white;
-    height: 35vh;
+    height: 30vh;
     overflow-y: auto;
     transition: height 0.5s ease-in;
+    padding: 0 0.8em 0 0.8em;
   }
 
   .active .accordion-panel {
@@ -75,10 +78,28 @@ const styles = css`
     margin-top: 1.5em;
   }
 
-  @media screen and (min-width: 980px) {
+  @media screen and (max-width: 980px) {
     .accordion {
-      --magic-fraction: 0.073206vw;
-      font-size: calc(35 * var(--magic-fraction));
+      margin-top: 2.8em;
+      padding-bottom: 1em;
+    }
+    .accordion-panel {
+      height: 27vh;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .accordion-panel {
+      height: 35vh;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .bio-image {
+      width: 50vw;
+      margin: 1em;
+      margin-left: 0;
+      margin-top: 1.5em;
     }
   }
 `;

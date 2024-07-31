@@ -1,0 +1,32 @@
+on:
+  push:
+    branches:
+      - staging
+name: 🚀 Deploy website on push
+jobs:
+  web-deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.5.1'
+
+      - name: Build Project
+        run: |
+          npm install --force
+          npm run build
+          npm run build:deploy
+
+      - name: 📂 Sync files
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ftp.spritestudios.co.uk
+          local-dir: ./build/
+          username: ${{ secrets.ftp_username }}
+          password: ${{ secrets.ftp_password }}
+          server-dir: /public_html/staging/
