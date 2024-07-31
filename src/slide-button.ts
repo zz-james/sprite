@@ -8,11 +8,13 @@ export class SlideButton extends LitElement {
       width: 2em;
       height: 2em;
       cursor: pointer;
-      border: 1px solid grey;
+      border: 1px solid white;
+      background-color: grey;
       border-radius: 1em;
       display: flex;
       align-items: center;
       justify-content: center;
+      color: white;
     }
 
     ::slotted(svg) {

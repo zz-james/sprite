@@ -24,8 +24,17 @@ const styles = css`
   }
 
   .example-card-image img {
-    float: left;
     width: 100%;
+  }
+
+  @media screen and (max-width: 900px) {
+    .example-card-image {
+      width: 100%;
+      text-align: center;
+    }
+    .example-card-image img {
+      width: 75%;
+    }
   }
 `;
 

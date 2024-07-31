@@ -38,7 +38,7 @@ export class HomeTeaser extends LitElement {
               // e.preventDefault();
               this.switchSlide('home');
             }}
-            >Home</a
+            >HOME</a
           >
           <a
             href="index.html#who"

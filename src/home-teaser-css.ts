@@ -25,16 +25,6 @@ const styles = css`
     padding: calc(20 * var(--magic-fraction));
   }
 
-  @media screen and (min-width: 980px) {
-    .container {
-      --magic-fraction: 0.073206vw;
-    }
-
-    .container {
-      padding: calc(40 * var(--magic-fraction));
-    }
-  }
-
   @media screen and (min-width: 1920px) {
     .container {
       --magic-fraction: 1.4px; /*1.405564px;*/
@@ -53,14 +43,6 @@ const styles = css`
     position: relative;
   }
 
-  @media screen and (min-width: 980px) {
-    .wrapper {
-      --magic-fraction: 0.073206vw;
-      height: calc(190 * var(--magic-fraction));
-      position: relative;
-    }
-  }
-
   .wrapper .motion-text {
     font-size: calc(96 * var(--magic-fraction));
     font-family: neue-haas-grotesk-display, sans-serif;
@@ -69,17 +51,7 @@ const styles = css`
     line-height: calc(96 * var(--magic-fraction));
     margin-left: calc(-3 * var(--magic-fraction));
   }
-  @media screen and (min-width: 980px) {
-    .wrapper .motion-text {
-      --magic-fraction: 0.073206vw;
-      font-size: calc(230 * var(--magic-fraction));
-      font-family: neue-haas-grotesk-display, sans-serif;
-      font-weight: 500;
-      font-style: normal;
-      line-height: calc(180 * var(--magic-fraction));
-      margin-left: calc(-2 * var(--magic-fraction));
-    }
-  }
+
   .wrapper .motion-text:after {
     content: '';
     display: inline-block;
@@ -93,12 +65,7 @@ const styles = css`
     -webkit-animation-iteration-count: infinite;
     animation-iteration-count: infinite;
   }
-  @media screen and (min-width: 980px) {
-    .wrapper .motion-text:after {
-      height: calc(179 * var(--magic-fraction));
-      width: calc(42 * var(--magic-fraction));
-    }
-  }
+
   .copy {
     padding-top: calc(10 * var(--magic-fraction));
     font-size: calc(24 * var(--magic-fraction));
@@ -110,9 +77,35 @@ const styles = css`
     /* visibility: hidden; */
   }
 
-  @media screen and (min-width: 980px) {
-    .copy {
+  @media screen and (min-width: 980px), screen and (max-height: 500px) {
+    .container {
       --magic-fraction: 0.073206vw;
+    }
+
+    .container {
+      padding: calc(40 * var(--magic-fraction));
+    }
+
+    .wrapper {
+      height: calc(190 * var(--magic-fraction));
+      position: relative;
+    }
+
+    .wrapper .motion-text {
+      font-size: calc(230 * var(--magic-fraction));
+      font-family: neue-haas-grotesk-display, sans-serif;
+      font-weight: 500;
+      font-style: normal;
+      line-height: calc(180 * var(--magic-fraction));
+      margin-left: calc(-2 * var(--magic-fraction));
+    }
+
+    .wrapper .motion-text:after {
+      height: calc(179 * var(--magic-fraction));
+      width: calc(42 * var(--magic-fraction));
+    }
+
+    .copy {
       padding-top: calc(15 * var(--magic-fraction));
       font-size: calc(52 * var(--magic-fraction));
       font-family: neue-haas-grotesk-display, sans-serif;
