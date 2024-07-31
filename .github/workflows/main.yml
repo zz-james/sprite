@@ -25,6 +25,7 @@ jobs:
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
+          local-dir: ./build/
           server: ftp.spritestudios.co.uk
           username: ${{ secrets.ftp_username }}
           password: ${{ secrets.ftp_password }}
