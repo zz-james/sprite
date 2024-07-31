@@ -13,7 +13,7 @@ export class WorkExamples extends LitElement {
     return html`
       <div class="work-examples">
         <div>
-          <h2>Some examples of our work:</h2>
+          <h5>&nbsp;</h5>
           <div class="work-example">
             <simple-carousel>
               <!-- -->

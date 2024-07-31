@@ -2,7 +2,7 @@ import {css} from 'lit';
 
 const styles = css`
   header {
-    --magic-fraction: 0.073206vw;
+    --magic-fraction: 0.266667vw;
     box-sizing: border-box;
   }
 
@@ -56,7 +56,7 @@ const styles = css`
     font-style: normal;
     line-height: calc(15 * var(--magic-fraction));
   }
-  /* @media screen and (min-width: 980px) {
+  @media screen and (min-width: 980px) {
     header .wrapper {
       --magic-fraction: 0.073206vw;
       font-size: calc(16 * var(--magic-fraction));
@@ -67,26 +67,7 @@ const styles = css`
     }
   }
 
-  header .wrapper label {
-    margin-left: calc(40 * var(--magic-fraction));
-    font-size: calc(13 * var(--magic-fraction));
-    font-family: neue-haas-grotesk-display, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-  }
-  @media screen and (min-width: 980px) {
-    header .wrapper label {
-      --magic-fraction: 0.073206vw;
-      margin-left: calc(730 * var(--magic-fraction));
-      font-size: calc(16 * var(--magic-fraction));
-      font-family: neue-haas-grotesk-display, sans-serif;
-      font-weight: 500;
-      font-style: normal;
-      cursor: pointer;
-    }
-  } */
   .wrapper a {
-    font-size: 1.75em;
     text-decoration: none;
   }
 `;
